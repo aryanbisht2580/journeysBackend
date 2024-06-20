@@ -2,7 +2,6 @@ import fs from 'fs'
 import slugify from 'slugify';
 import productModel from '../models/productModel.js';
 import mongoose from 'mongoose';
-import { message } from 'antd';
 export default class productController {
     createProduct = async (req, res) => {
         try {
