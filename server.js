@@ -26,6 +26,6 @@ app.get('/',(req,res)=>{
 
 const PORT=process.env.PORT;
 app.listen(PORT,()=>{
-    console.log("sever running");
+    console.log("sever running at",PORT);
     connectToDB();
 })
