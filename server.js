@@ -8,8 +8,10 @@ import productRouter from "./routes/productRoute.js";
 import paymentRouter from "./routes/paymentRoutes.js";
 import orderRouter from "./routes/orderRoute.js";
 import cartRouter from "./routes/cartRoute.js";
+import { croning } from "./config/cron.js";
 
 dotenv.config();
+croning();
 const app=express();
 app.use(cors())
 app.use(express.json());
